@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">  
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./asset/css/style.css">
+        <title>Skateboard survey</title>
+    </head>
+  <body> 
+      <div class="section">
+        <header>
+            <h1 class="section__title" id="title">Major skateboard survey</h1>
+            <p class="section__subtitle"id="description">We are conducting a very important survey
+                to assess the impact that the skateboarder has on modern life,
+                If you have a minute, answer this little question</p>
+          </header>  
+            
+            <form id="survey-form">
+                <div class="form__group">
+                    <label id="name-label">Name</label>
+                    <input type="text" class="form__control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form__group">
+                    <label id="email-label">Email</label>
+                    <input type="email" class="form__control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form__group">
+                    <label id="number-label">Age</label>
+                    <input type="number" class="form__control" id="number" min="0" max="130" placeholder="Enter your age"> 
+                </div>
+                <div class="form__group">
+                    <p>What is position on your skateboard?</p>
+                    <select class="form__control" name="" id="dropdown">
+                        <option disable selected value>Select your position</option>
+                        <option value="">Regular</option>
+                        <option value="">Goffy</option>
+                        <option value="">I do not know</option>
+                       
+
+                    </select>
+                </div>
+                <div class="form__group">
+                    <p>what category practices?</p>
+                    <label for=""><input class="input__radio" value=freestyle type=checkbox>Freestyle</label>
+                    <label for=""><input class="input__radio"value=slalom type=checkbox>Slalom</label>
+                    <label for=""><input class="input__radio"value=downhill type=checkbox>Downhill</label>
+                    <label for=""><input class="input__radio"value=vertical_skateboard type=checkbox>Vertical Skateboard</label>
+                    <label for=""><input class="input__radio"value=street_skateboard type=checkbox>Street skateboard</label>
+                    <label for=""><input class="input__radio"value=park_skateboard type=checkbox>Park Skateboard</label>
+                    <label for=""><input class="input__radio"value=pool_skateboard type=checkbox>pool skateboard</label>
+                    <label for=""><input class="input__radio"value=cruising_skateboard type=checkbox>Cruising Skateboard</label>
+                    <label for=""><input class="input__radio"value=off_road type=checkbox>Off-road</label>
+                    <label for=""><input class="input__radio"value=none type=checkbox>None</label>
+                
+                </div>
+                <div class="form__group">
+                    <p>have you injured yourself?</p>
+                    <label for=""><input class="input__ckeckbox"name="user-recommend" value=never type=radio>Never</label>
+                    <label for=""><input class="input__ckeckbox"name="user-recommend" value=rarel type=radio>Rarely</label>
+                    <label for=""><input class="input__ckeckbox"name="user-recommend" value=sometimes type=radio>Sometimes</label>
+                    <label for=""><input class="input__ckeckbox"name="user-recommend" value=forever type=radio>Forever</label>
+                </div>
+                <div class="form__group">
+                    <p>What do you think of skateboarding?</p>
+                    <textarea class="input__textarea"name="" id="" cols="30" rows="10">
+
+                    </textarea>
+                </div>
+                <div class="form__group">
+                    <button class="input__submit"id=submit type=submit>Submit</button>
+                </div>
+    
+            </form>
+
+      </div>
+      
+  </body>  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </html>
